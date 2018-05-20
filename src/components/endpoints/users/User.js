@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 
 class User extends Component {
   render() {
-    const { age } = this.props
+    const { age, children } = this.props
     return (
       <div>
         <li key={age}>
-          <div>{this.props.children}</div>
+          <div>{children}</div>
           <div>{age}</div>
         </li>
       </div>
